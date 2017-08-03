@@ -1,0 +1,29 @@
+<div>
+
+    <div class="about_hd">
+        <div class="text">
+            <span>关于雷拓</span>
+            <span>ABOUT</span>
+            <div class="xt"></div>
+        </div>
+    </div>
+    <div class="about_main">
+        <div class="about_nav">
+            <a ui-sref=".leituo">关于镭拓</a><span>|</span>
+            <a ui-sref=".certificate">荣誉证书</a><span>|</span>
+            <a ui-sref=".news">新闻中心</a><span>|</span>
+            <a ui-sref=".jobs">人才招聘</a><span>|</span>
+            <a ui-sref=".pay">付款方式</a><span>|</span>
+            <a ui-sref=".contact">联系我们</a>
+        </div>
+        <div ui-view="aboutview"></div>
+    </div>
+
+</div>
+<script>
+    $(function () {
+        if(document.readyState=="complete"){
+            $('.loading').hide();
+        }
+    });
+</script>

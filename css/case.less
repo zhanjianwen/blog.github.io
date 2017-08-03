@@ -1,0 +1,317 @@
+a{
+  text-underline: none;
+  color:#444;
+}
+div.m_ads {
+  background: url(../img/case/case_bj.jpg) no-repeat center;
+  width: 100%;
+  height: 380px;
+ .text{
+   text-align: center;
+   padding-top: 170px;
+   .xt{
+     height: 1px;
+     width: 145px;
+     margin: 15px auto 0;
+     border-bottom: 1px solid rgba(255,255,255,0.5);
+     color: white;
+   }
+   span{
+     color:white;
+     font-size: 40px;
+     tranform:uppercase;
+     text-shadow: 0 0 10px rgba(0,0,0,0.5);
+   }
+ }
+  .m_mn{
+   width: 100%;
+    margin: 0 auto;
+  }
+
+}
+//m_main2
+.m_main2{
+  font-size: 16px;
+  width: 100%;
+  height: 520px;
+  margin-top:-120px;
+  display: flex;
+  justify-content: center;
+
+  .m_all{
+    width: 1200px;
+    height: 520px;
+
+  }
+  .m_top img:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 2s;
+    img{opacity: .7}//
+  }
+  .m_top{
+    display: flex;
+    justify-content: space-between;//
+
+    .m_top_left,.m_top_middle,.m_top_right{
+      width: 400px;
+      height: 400px;
+        .top,.bottom{
+        width: 400px;
+        height: 200px;
+        position: absolute;
+
+      }
+      .bottom{
+        bottom: 0;
+        left: 0;
+        position: absolute;
+      }
+    }
+    .m_top_left,.m_top_right{
+      position: relative;
+      overflow: hidden;
+
+
+    }
+    .m_top_middle{
+      position: relative;
+      overflow: hidden;
+      div{
+        position: absolute;
+      }
+    }
+  }
+  .m_bottom{
+    display: inline-flex;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: #ffffff url(../img/sase_nav_bj.png) no-repeat center bottom;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    .left{
+      span:first-child,span:nth-child(2),span:nth-child(3){
+        background: url(../img/case/line.jpg) no-repeat right;
+      }
+    }
+    span{
+      padding: 0 60px;
+      a:hover{
+        color: #2c88d8;
+        text-underline: none!important;
+      }
+    }
+
+.right {
+  width: 260px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  margin-top: 25px;
+
+}
+
+  input{
+    outline: none;
+    width: 190px;
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 0 5px 20px;
+    background: none;
+    color: #7d7d7d;
+    float: left;
+  }
+  button{
+    height: 40px;
+    border: none;
+    background: url(../img/seek_ico.png) no-repeat center;
+    cursor: pointer;
+    float: left;
+    margin-left: 20px;
+    width: 40px;
+  }
+}
+
+}
+
+  ol.parent li{
+    background: white;
+    width:10px;
+    height: 10px;
+  }
+
+
+//m_main3
+.m_mian3{
+  width: 100%;
+  min-width: 1200px;
+  .m_whole{
+    width: 1200px;
+    padding: 40px 0 60px;
+    margin: 0 auto;
+  }
+  .whole{
+    width: 1200px;
+
+  }
+  ul,li,img{
+    box-sizing: border-box;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    //height: 1000px;
+    overflow: hidden;
+    display: flex;//
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+      li:hover img{
+        transform: scale(1.1,1.1);
+      }
+    li:hover .words{
+     display: none;
+    }
+    li{
+      //display: block;
+      list-style: none;
+      width: 380px;
+      height: 310px;
+      float: left;
+      box-shadow: 0 0 30px rgba(0,0,0,0.2);
+      margin-bottom: 30px;
+
+      .pic-box{
+        position: relative;
+        overflow: hidden;
+        a{
+          color: inherit;
+          text-decoration: none;
+        .words{
+          width:380px;
+          height: 50px;
+          line-height: 50px;
+          padding-left: 15px;
+          font-size:16px;
+          color: white;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background-image: linear-gradient(#ccc,#e0e0e0);
+          text-shadow: 2px 2px 2px #333;
+
+        }
+
+
+        }
+        img{
+          width:380px;
+          height:260px;
+          display: block;
+          max-width: 100%;
+          transition: 1s;
+          opacity:.7!important;
+        }
+
+        .text{
+          position: absolute;
+          top:0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          padding: 30px;
+          opacity: 0;
+          background-color: rgba(0,0,0,0.5);
+          color:white;
+          .box{
+            box-sizing: border-box;
+            padding: 30px 35px 40px;
+            .txt{
+              color:white;
+              line-height: 24px;
+              text-align: justify;
+              height: 94px;
+            }
+            .title{
+              width: 100%;
+              height: 24px;
+              text-align: center;
+              font-size: 18px;
+              font-weight: bold;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+            .xt{
+              width: 40px;
+              margin: 10px auto;
+              height: 2px;
+              background-color: #ffffff;
+            }
+          }
+
+        }
+        .text:hover{
+          opacity:1;
+        }
+      }
+      .info{
+        height: 50px;
+        line-height: 50px;
+        position: relative;
+        color:#888888;
+        span:first-child{
+          margin-left:15px ;
+        }
+        .span_bj{
+          background: url(../img/case/case_computer.jpg) no-repeat;
+          background-size:contain;
+          width: 30px;
+          height: 20px;
+          position: absolute;
+          top:15px;
+          right: 15px;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+}
+
+//分页
+.between-page{
+  //margin-top: 50px;
+ .page{
+   //margin:0 auto ;
+   .ul-all{
+     display: block;
+     text-align: center;
+     margin-bottom: 50px;
+     li{
+       display: inline-block;
+       padding: 10px 18px;
+       border-radius:4px;
+       color: #000;
+       border:1px solid #c0c0c0;
+       a{text-decoration: none; }
+     }
+     li:hover{
+       background:#ccc;
+       color: white;
+       transition:1.5s;
+       a{color: white}
+     }
+    .selected{
+      background:#2c88d8;
+      a{color: white}
+    }
+   }
+ }
+
+}
