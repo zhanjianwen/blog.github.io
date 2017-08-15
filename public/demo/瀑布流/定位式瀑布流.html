@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--获取浏览器的宽和高div宽度默认为230-->
+    <!--计算容器内最多容纳div的个数使用math.floor向下取整-->
+    <!--获取剩余空间设置居中-->
+    <!--初始化一个高度素组-->
+    <!--循环创建元素-->
+    <!--获取最小的列-->
+    <!--跟随内容-->
+    <!--设置div的定位和更新高度素组-->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #box{
+            position: relative;
+		  
+			}
+
+
+    </style>
+    <script>
+        //获取高度素组中最小的列
+
+        function checkHeight(arrHeight) {
+            var height=100000;
+            var index=0;
+
+            for(var i=0;i<arrHeight.length; i++){
+                var now_height=arrHeight[i];
+                if(now_height<height){
+                    height=now_height;
+                    index=i;
+                }
+            }
+            return index;
+        }
+        window.onload=function () {
+
+            //获取浏览器的宽高div宽默认为230
+            var obox=document.getElementById('box')
+            var vW=document.documentElement.clientWidth;
+            var vH = document.documentElement.clientHeight;
+//            计算容器最多容纳多少个div使用向下取整
+            var defalut_width=230+16;
+            var div_num=Math.floor(vW/defalut_width);
+            //获取剩余的空间
+            obox.style.width=defalut_width*div_num+'px';
+            obox.style.background='#e2e2e2';
+            obox.style.margin='0 auto';
+
+            //初始化一个高度素组
+            var arrHeight=[0,0,0,0,0];
+            creatElement();
+            function creatElement() {
+                for (var i=1;i<=30;i++){
+                    var oDiv=document.createElement('div');
+                    oDiv.style.width=230+'px';
+                    var height=parseInt(Math.random()*(350-250)+250);
+                    oDiv.style.background="rgb("+parseInt(Math.random()*(256-1)+1)+','+parseInt(Math.random()*(256-1)+1)+','+parseInt(Math.random()*(256-1)+1)+")";
+                    oDiv.style.height=height+'px';
+                    oDiv.style.position='absolute';
+
+                    //获取最小的列
+                    var min_index=checkHeight(arrHeight);
+                    oDiv.style.top=arrHeight[min_index]+'px';
+                    oDiv.style.left=min_index*defalut_width+'px';
+                    obox.appendChild(oDiv)
+//                更新高度
+                    arrHeight[min_index]+=oDiv.offsetHeight+8;
+                }
+            }
+
+window.onscroll=function () {
+    var sT = document.documentElement.scrollTop || document.body.scrollTop;
+    //滚动条高度+浏览器高度=内容区域高度
+
+    if (sT + vH > document.body.scrollHeight*0.8) {
+        creatElement();
+    }
+}
+        }
+
+    </script>
+</head>
+<body>
+<div id="box">
+
+</div>
+</body>
+</html>
