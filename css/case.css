@@ -1,0 +1,297 @@
+a {
+  text-underline: none;
+  color: #444;
+}
+div.m_ads {
+  background: url(../img/case/case_bj.jpg) no-repeat center;
+  width: 100%;
+  height: 380px;
+}
+div.m_ads .text {
+  text-align: center;
+  padding-top: 170px;
+}
+div.m_ads .text .xt {
+  height: 1px;
+  width: 145px;
+  margin: 15px auto 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+}
+div.m_ads .text span {
+  color: white;
+  font-size: 40px;
+  tranform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+div.m_ads .m_mn {
+  width: 100%;
+  margin: 0 auto;
+}
+.m_main2 {
+  font-size: 16px;
+  width: 100%;
+  height: 520px;
+  margin-top: -120px;
+  display: flex;
+  justify-content: center;
+}
+.m_main2 .m_all {
+  width: 1200px;
+  height: 520px;
+}
+.m_main2 .m_top img:hover {
+  transform: scale(1.1, 1.1);
+  transition-duration: 2s;
+}
+.m_main2 .m_top img:hover img {
+  opacity: 0.7;
+}
+.m_main2 .m_top {
+  display: flex;
+  justify-content: space-between;
+}
+.m_main2 .m_top .m_top_left,
+.m_main2 .m_top .m_top_middle,
+.m_main2 .m_top .m_top_right {
+  width: 400px;
+  height: 400px;
+}
+.m_main2 .m_top .m_top_left .top,
+.m_main2 .m_top .m_top_middle .top,
+.m_main2 .m_top .m_top_right .top,
+.m_main2 .m_top .m_top_left .bottom,
+.m_main2 .m_top .m_top_middle .bottom,
+.m_main2 .m_top .m_top_right .bottom {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+}
+.m_main2 .m_top .m_top_left .bottom,
+.m_main2 .m_top .m_top_middle .bottom,
+.m_main2 .m_top .m_top_right .bottom {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+.m_main2 .m_top .m_top_left,
+.m_main2 .m_top .m_top_right {
+  position: relative;
+  overflow: hidden;
+}
+.m_main2 .m_top .m_top_middle {
+  position: relative;
+  overflow: hidden;
+}
+.m_main2 .m_top .m_top_middle div {
+  position: absolute;
+}
+.m_main2 .m_bottom {
+  display: inline-flex;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background: #ffffff url(../img/sase_nav_bj.png) no-repeat center bottom;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+.m_main2 .m_bottom .left span:first-child,
+.m_main2 .m_bottom .left span:nth-child(2),
+.m_main2 .m_bottom .left span:nth-child(3) {
+  background: url(../img/case/line.jpg) no-repeat right;
+}
+.m_main2 .m_bottom span {
+  padding: 0 60px;
+}
+.m_main2 .m_bottom span a:hover {
+  color: #2c88d8;
+  text-underline: none!important;
+}
+.m_main2 .m_bottom .right {
+  width: 260px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  margin-top: 25px;
+}
+.m_main2 .m_bottom input {
+  outline: none;
+  width: 190px;
+  border: none;
+  height: 30px;
+  line-height: 30px;
+  padding: 5px 0 5px 20px;
+  background: none;
+  color: #7d7d7d;
+  float: left;
+}
+.m_main2 .m_bottom button {
+  height: 40px;
+  border: none;
+  background: url(../img/seek_ico.png) no-repeat center;
+  cursor: pointer;
+  float: left;
+  margin-left: 20px;
+  width: 40px;
+}
+ol.parent li {
+  background: white;
+  width: 10px;
+  height: 10px;
+}
+.m_mian3 {
+  width: 100%;
+  min-width: 1200px;
+}
+.m_mian3 .m_whole {
+  width: 1200px;
+  padding: 40px 0 60px;
+  margin: 0 auto;
+}
+.m_mian3 .whole {
+  width: 1200px;
+}
+.m_mian3 ul,
+.m_mian3 li,
+.m_mian3 img {
+  box-sizing: border-box;
+}
+.m_mian3 ul {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.m_mian3 ul li:hover img {
+  transform: scale(1.1, 1.1);
+}
+.m_mian3 ul li:hover .words {
+  display: none;
+}
+.m_mian3 ul li {
+  list-style: none;
+  width: 380px;
+  height: 310px;
+  float: left;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+.m_mian3 ul li .pic-box {
+  position: relative;
+  overflow: hidden;
+}
+.m_mian3 ul li .pic-box a {
+  color: inherit;
+  text-decoration: none;
+}
+.m_mian3 ul li .pic-box a .words {
+  width: 380px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 15px;
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(#cccccc, #e0e0e0);
+  text-shadow: 2px 2px 2px #333;
+}
+.m_mian3 ul li .pic-box img {
+  width: 380px;
+  height: 260px;
+  display: block;
+  max-width: 100%;
+  transition: 1s;
+  opacity: .7!important;
+}
+.m_mian3 ul li .pic-box .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.m_mian3 ul li .pic-box .text .box {
+  box-sizing: border-box;
+  padding: 30px 35px 40px;
+}
+.m_mian3 ul li .pic-box .text .box .txt {
+  color: white;
+  line-height: 24px;
+  text-align: justify;
+  height: 94px;
+}
+.m_mian3 ul li .pic-box .text .box .title {
+  width: 100%;
+  height: 24px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.m_mian3 ul li .pic-box .text .box .xt {
+  width: 40px;
+  margin: 10px auto;
+  height: 2px;
+  background-color: #ffffff;
+}
+.m_mian3 ul li .pic-box .text:hover {
+  opacity: 1;
+}
+.m_mian3 ul li .info {
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  color: #888888;
+}
+.m_mian3 ul li .info span:first-child {
+  margin-left: 15px ;
+}
+.m_mian3 ul li .info .span_bj {
+  background: url(../img/case/case_computer.jpg) no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.between-page .page .ul-all {
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.between-page .page .ul-all li {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 4px;
+  color: #000;
+  border: 1px solid #c0c0c0;
+}
+.between-page .page .ul-all li a {
+  text-decoration: none;
+}
+.between-page .page .ul-all li:hover {
+  background: #ccc;
+  color: white;
+  transition: 1.5s;
+}
+.between-page .page .ul-all li:hover a {
+  color: #ffffff;
+}
+.between-page .page .ul-all .selected {
+  background: #2c88d8;
+}
+.between-page .page .ul-all .selected a {
+  color: #ffffff;
+}

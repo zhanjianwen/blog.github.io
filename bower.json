@@ -1,0 +1,25 @@
+{
+  "name": "static",
+  "authors": [
+    "htmlzj <941628696@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./component",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^1.0.4",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "angular": "^1.6.4",
+    "gulp": "^3.9.1"
+  }
+}

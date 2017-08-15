@@ -1,0 +1,325 @@
+.screens {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  /*top:-637px;*/
+  /*设置每个界面的背景图片属性*/
+  /*背景图片属性设置完毕*/
+  /*screen1中设置的样式*/
+  /*界面右侧边栏控制按钮*/
+  /*设置每个界面的标题和注释文字的样式一样*/
+  /*标题样式结束*/
+}
+.screens .screen {
+  width: 100%;
+  height: 665px;
+}
+.screens div.screen a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 665px;
+}
+.screens .screen a .contain {
+  width: 1200px;
+  height: 665px;
+  position: absolute;
+  left: 50%;
+  margin-left: -600px;
+  overflow: hidden;
+}
+.screens div.screen1 {
+  background-image: url("../img/service/zt_service_bj1.jpg");
+  background-repeat: no-repeat;
+}
+.screens div.screen2 {
+  background-image: url("../img/service/zt_service_bj2.jpg");
+  background-repeat: no-repeat;
+}
+.screens div.screen3 {
+  background-image: url("../img/service/zt_service_bj3.jpg");
+  background-repeat: no-repeat;
+}
+.screens div.screen4 {
+  background-image: url("../img/service/zt_service_bj4.jpg");
+  background-repeat: no-repeat;
+}
+.screens div.screen5 {
+  background-image: url("../img/service/zt_service_bj5.jpg");
+  background-repeat: no-repeat;
+}
+.screens div.screen6 {
+  background-image: url("../img/service/zt_service_bj6.jpg");
+  background-repeat: no-repeat;
+}
+.screens div.contain .screen1_left div {
+  position: absolute;
+}
+.screens div.contain .screen1_left div:first-child {
+  left: 0;
+  top: 270px;
+}
+.screens div.contain .screen1_left div:nth-child(2) {
+  left: 145px;
+  top: 230px;
+}
+.screens div.contain .screen1_left div:nth-child(3) {
+  left: 0;
+  top: 375px;
+}
+.screens div.contain .screen1_left div:nth-child(4) {
+  left: 0;
+  top: 530px;
+}
+.screens div.contain .screen1_left div:nth-child(5) {
+  left: 148px;
+  top: 530px;
+}
+.screens div.contain .screen1_left div:nth-child(6) {
+  left: 295px;
+  top: 530px;
+}
+.screens div.contain .screen1_left div:nth-child(7) {
+  left: 170px;
+  top: 395px;
+}
+.screens div.contain .screen1_left div:nth-child(8) {
+  left: -650px;
+  top: -300px;
+  animation: rotate 20s infinite linear;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.screens div.contain .screen1_right div {
+  display: block;
+  position: absolute;
+}
+.screens div.contain .screen1_right div:first-child {
+  left: 880px;
+  top: 150px;
+}
+.screens div.contain .screen1_right div:nth-child(2) {
+  left: 790px;
+  top: 320px;
+}
+.screens div.contain .screen1_right div:nth-child(3) {
+  left: 865px;
+  top: 490px;
+}
+.screens ul.service_tab {
+  width: 17px;
+  background: url("../img/school/nav_ico_bj.png") repeat-y center top;
+  position: fixed;
+  right: 25px;
+  top: 50%;
+  margin-top: -115px;
+  z-index: 10;
+}
+.screens li.service_tab_button {
+  display: block;
+  width: 9px;
+  height: 9px;
+  margin: 25px auto;
+  background-color: #ffffff;
+  border-radius: 100%;
+  /*opacity: 1;*/
+}
+.screens .title p {
+  line-height: 50px;
+  text-align: center;
+  margin: 0;
+}
+.screens .title p:first-child img {
+  display: block;
+  padding-top: 140px;
+  margin: 0 auto;
+}
+.screens .title p:last-child {
+  font-size: 18px;
+  color: white;
+}
+.screens .screen2 .img_content div {
+  position: absolute;
+}
+.screens .screen2 .img_content div:first-child {
+  left: 950px;
+  top: 550px;
+  z-index: 3;
+}
+.screens .screen2 .img_content div:nth-child(2) {
+  left: 760px;
+  top: 605px;
+  z-index: 2;
+}
+.screens .screen2 .img_content div:nth-child(3) {
+  left: 80px;
+  top: 535px;
+  z-index: 3;
+}
+.screens .screen2 .img_content div:nth-child(4) {
+  left: 330px;
+  top: 755px;
+}
+.screens .screen2 .img_content div:nth-child(5) {
+  left: 170px;
+  top: 340px;
+  z-index: 3;
+}
+.screens .screen2 .img_content div:nth-child(6) {
+  left: 510px;
+  top: 485px;
+}
+.screens .screen2 .img_content div:nth-child(7) {
+  left: 560px;
+  top: 360px;
+}
+.screens .img_content3_left {
+  width: 500px;
+  position: absolute;
+  left: 80px;
+  top: 280px;
+}
+.screens .img_content3_left div {
+  display: inline-block;
+  margin-right: 20px;
+}
+.screens .img_content3_right div {
+  position: absolute;
+}
+.screens .img_content3_right div:first-child {
+  right: 50px;
+  top: 330px;
+}
+.screens .img_content3_right div:nth-child(2) {
+  right: 148px;
+  top: 330px;
+}
+.screens .img_content3_right div:nth-child(3) {
+  right: 238px;
+  top: 300px;
+}
+.screens .img_content3_right div:nth-child(4) {
+  right: 303px;
+  top: 270px;
+}
+.screens .screen4 ul {
+  /*width:700px;*/
+  margin: 0 auto;
+  text-align: center;
+}
+.screens .screen4 ul li {
+  display: inline-block;
+  margin: 30px 20px 0;
+}
+.screens .screen4_num div {
+  display: block;
+  position: absolute;
+}
+.screens .screen4_num div:nth-child(1) {
+  top: 385px;
+  left: 50%;
+  margin-left: -225px;
+  animation: rotate 20s infinite linear;
+}
+.screens .screen4_num div:nth-child(2) {
+  left: 725px;
+  top: 750px;
+}
+.screens .screen4_num div:nth-child(3) {
+  left: 208px;
+  top: 575px;
+}
+.screens .screen4_num div:nth-child(4) {
+  left: 765px;
+  top: 515px;
+}
+.screens .screen4_num div:nth-child(5) {
+  left: 260px;
+  top: 445px;
+}
+.screens .screen4_num div:nth-child(6) {
+  top: 590px;
+  width: 100%;
+}
+.screens .screen4_num div:nth-child(6) p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.screens .screen5_img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  text-align: center;
+}
+.screens .screen5_img li {
+  display: inline-block;
+  width: 255px;
+  text-align: center;
+}
+.screens .screen5_img li img {
+  display: block;
+  margin: 0 auto;
+}
+.screens .screen5_img li .bg_img {
+  margin-top: -100px;
+  animation: rotate 20s infinite linear;
+}
+.screens .screen5_img li p {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 48px;
+  margin-top: 35px;
+}
+.screens .screen6 {
+  overflow: hidden;
+}
+.screens .screen6 .contain1 {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.screens .screen6 .title ul {
+  text-align: center;
+}
+.screens .screen6 .title ul li {
+  display: inline-block;
+  padding: 20px 10px 0;
+  font-size: 18px;
+  color: #d9a960;
+}
+.screens .screen6 .screen6_img div {
+  position: absolute;
+  display: block;
+}
+.screens .screen6 .screen6_img div:nth-child(1) {
+  width: 605px;
+  height: 370px;
+  top: 495px;
+  left: -130px;
+  z-index: 3;
+}
+.screens .screen6 .screen6_img div:nth-child(2) {
+  width: 1263px;
+  height: 438px;
+  top: 325px;
+  left: 30px;
+  z-index: 2;
+}
+.screens .screen6 .screen6_img div:nth-child(3) {
+  width: 915px;
+  height: 510px;
+  top: 281px;
+  left: 417px;
+  z-index: 1;
+}
