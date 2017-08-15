@@ -69,7 +69,7 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">小玩意儿</a>
     			
             
     			
@@ -80,14 +80,6 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
-		        
 			</div>
 		</nav>
 	</header>		
@@ -125,14 +117,6 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
-			        
 				</div>
 			</nav>
 
@@ -160,282 +144,6 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-    <article id="post-旋转图/旋转图" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        	<script type="text/javascript">
-		window.onload= function () {
-        	// body...
-
-        //定义一个变量oImg来获取标签属性
-        var oImg = document.getElementsByTagName('img');
-        var oBox = document.getElementById('box');
-        var oX,oY,minuX=0,minuY=0,roX=0,roY=-10,timer;
-        //oImg的长度
-        var oImgLength = oImg.length;
-        //360° 除以 个数  得到旋转角度
-        var oDeg = 360 / oImgLength;
-        for (var i = 0; i < oImgLength; i++) {
-        	//第i个img旋转oDeg*i的角度
-        	oImg[i].style.transform = 'rotateY('+oDeg*i+'deg) translateZ(300px)';
-        	//发纸牌效果
-        	oImg[i].style.transition = 'transform 1s '+(oImgLength-i-1)*0.1+'s';
-        }
-        //鼠标拖拽分为三部分：按下   移动  抬起
-        //当鼠标按下的时候  
-        document.onmousedown= function (e) {
-        	//清楚定时器
-        	clearInterval();
-        	//处理浏览器兼容性问题
-        	e = e || window.e;
-        	var oX = e.clientX;
-        	var oY = e.clientY;
-        	//鼠标移动
-        	this.onmousemove=function (e) {
-        		//处理浏览器兼容性问题
-        		e = e || window.e;
-        		//鼠标移动的时候距离左边的距离
-        		var eX = e.clientX;
-        		//鼠标移动的时候距离上边的距离
-        		var eY = e.clientY;
-        		//鼠标移动的距离的累加,减缓旋转速度
-        		roX += minuX * 0.2;
-        		roY -= minuY * 0.2;
-        		minuX = eX - oX;
-        		minuY = eY - oY;
-        		//鼠标移动距离的累加
-        		console.log(minuX,minuY);
-        		//console.log(eX,eY);检查是否获得位置坐标
-        		oBox.style.transform = 'rotateX('+roY+'deg)rotateY('+roX+'deg)';
-        		oX = eX;
-        		oY = eY;
-        		 // var oDiv = document.createElement('div');
-        		 // oDiv.style.cssText = 'width:5px;height:5px;background:red;position:fixed;top:'+eY+'px;left:'+eX+'px';
-        		 // this.body.appendChild(oDiv);
-        		}
-        	//鼠标抬起
-        	this.onmouseup = function () {
-        		this.onmousemove = null;
-        		//定时器
-        		timer = setInterval(function () {
-        			minuX *= 0.95;
-        			minuY *= 0.95;
-        			roX += minuX * 0.2;
-        			roY -= minuY * 0.2;
-        			oBox.style.transform = 'rotateX('+roY+'deg)rotateY('+roX+'deg)';
-        			if (Math.abs(minuX)<0.1 && Math.abs(minuY)<0.1) {
-        				clearInterval(timer);
-        			}
-        		},13);
-        	}
-        	return false;
-        }
-    }
-</script>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/15/旋转图/旋转图/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-旋转图/旋转图" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <style>
-		*{
-			margin: 0px;
-			padding: 0px;
-		}
-		body{
-			background-color: black;
-		}
-		#dic{
-			perspective: 800px;
-		}
-		/*图片所在的位置*/
-		#box{
-			transform-style: preserve-3d;
-			width:120px;
-			height:180px;
-			margin: 200px auto 0px; 
-			position: relative;
-			transform:rotateX(-10deg) rotateY(0deg);/*初始角度*/
-		}
-		#box img{
-			position: absolute;
-			top: 0px;
-			left: 0px;
-			box-shadow:  0 0 10px #f6f;/*水平偏移量向右为正，向左为负）,垂直偏移量（向下为正，向上为负），阴影的半径，阴影颜色*/
-			width: 100%;
-			height: 100%;
-			transform:rotateY(30deg);
-			border-radius: 1px;/*平滑度，圆角*/
-		}
-		#box p{
-			width:1200px;
-			height: 1200px;
-			border-radius: 50%;
-			position: absolute;
-			top: 0px;
-			left: 50%;
-			margin-left: -600px;
-			transform: rotateX(90deg) translateZ(400px);
-			background: -webkit-radial-gradient(center center,600px 600px,rgba(255,255,255,0.3),rgba(255,255,255,0));
-		}
-		.beian{
-			margin-left: 45%;
-			color: white;
-			margin-top: 20%;
-
-		}
-	</style>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/15/旋转图/旋转图/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-旋转图" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/15/旋转图/">旋转图</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/15/旋转图/" class="archive-article-date">
-  	<time datetime="2017-08-15T09:42:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <html><br><head><br>    <meta http-equiv="Content_Type" content="text/html;charset=UTF-8"><br>    <title>3D Rotate Album</title><br>    <link rel="icon" href="/images/mouse.ico" type="img/mouse-icon"><br>    <meta charset="utf-8"><br>    <meta name="keywords"><br>    <meta name="description"><br><br><br></head><br><body><br>    <div id="dic"><br>        <div id="box"><br>            <img src="images/1.png"><br>            <img src="images/2.png"><br>            <img src="images/3.png"><br>            <img src="images/4.png"><br>            <img src="images/5.png"><br>            <img src="images/6.png"><br>            <img src="images/7.png"><br>            <img src="images/8.png"><br>            <img src="images/9.png"><br>            <img src="images/10.png"><br>            <img src="images/11.png"><br>            <p></p><br>        </div><br>    </div><br>    <!-- <embed　src="music/1.mp3"　autostart="true"　loop="true"　hidden="true"></embed> --><br>    <!-- <audio>
-        <source src="music/1.mp3" type="audio/mp3" />
-            您的浏览器不支持 audio 元素。
-    </audio> --><br>    <div class="beian"><br>        <p>备案：赣ICP备17003012号</p><br>    </div><br>    <embed src="music/1.mp3" hidden="true" autostart="true" loop="true"><br><br></body><br></html>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/15/旋转图/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
     <article id="post-vue-cli" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -667,26 +375,33 @@
 
 
   
-    <article id="post-ajax" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-html" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/14/ajax/">ajax</a>
+      <a class="article-title" href="/2017/08/14/html/">Flex 布局</a>
     </h1>
   
 
         
-        <a href="/2017/08/14/ajax/" class="archive-article-date">
-  	<time datetime="2017-08-14T03:04:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
+        <a href="/2017/08/14/html/" class="archive-article-date">
+  	<time datetime="2017-08-14T03:03:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
+        <p></p><h5>Flex 是 Flexible Box 的缩写，意为”弹性布局”，用来为盒状模型提供最大的灵活性。<br>任何一个容器都可以指定为 Flex 布局。</h5><p></p>
+<p></p><h6><div style="background:#cecece;text-align:center">.box{display: flex;}<br></div></h6><p></p>
+<p></p><h5>行内元素也可以使用 Flex 布局。</h5><p></p>
+<p></p><h6><div style="background:#cecece;text-align:center">.box{display: inline-flex;}<br></div></h6><br>Webkit 内核的浏览器，必须加上-webkit前缀。<p></p>
+<p></p><h6><div style="background:#cecece;text-align:center">.box{display: -webkit-flex; /<em> Safari </em>/;display: flex;}<br></div></h6><br>注意，设为 Flex 布局以后，子元素的float、clear和vertical-align属性将失效
+        
+          <a class="article-more-a" href="/2017/08/14/html/#more">more >></a>
         
       
 
@@ -699,7 +414,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/14/ajax/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/08/14/html/">展开全文 >></a>
         </p>
       
 
@@ -729,27 +444,28 @@
 
 
   
-    <article id="post-angular" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/14/angular/">angular</a>
+      <a class="article-title" href="/2017/08/13/hello-world/">web前端的一些故事</a>
     </h1>
   
 
         
-        <a href="/2017/08/14/angular/" class="archive-article-date">
-  	<time datetime="2017-08-14T03:04:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
+        <a href="/2017/08/13/hello-world/" class="archive-article-date">
+  	<time datetime="2017-08-13T08:04:55.044Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-13</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>随着Web 2.0概念的普及和W3C组织的推广，网站重构的影响力正以惊人的速度增长。XHTML+CSS布局、DHTML和Ajax像一阵旋风，铺天盖地席卷而来，包括新浪、搜狐、网易、腾讯、淘宝等在内的各种规模的IT企业都对自己的网站进行了重构。前端开发的入门门槛其实非常低，与服务器端语言先慢后快的学习曲线相比，前端开发的学习曲线是先快后慢。</p>
+
       
 
       
@@ -761,7 +477,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/14/angular/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/08/13/hello-world/">展开全文 >></a>
         </p>
       
 
@@ -791,134 +507,6 @@
 
 
   
-    <article id="post-bootstrap" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/14/bootstrap/">bootstrap</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/14/bootstrap/" class="archive-article-date">
-  	<time datetime="2017-08-14T03:04:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/14/bootstrap/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-js" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/14/js/">js</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/14/js/" class="archive-article-date">
-  	<time datetime="2017-08-14T03:03:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/14/js/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -987,7 +575,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">小玩意儿</a></li>
       
         
       
@@ -1012,15 +600,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">photo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">vue-cli安装</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">photo</a>
               </li>
             
             <div class="clearfix"></div>
@@ -1072,27 +660,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://localhost:4000/旋转图" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="http://localhost:4000/demo/旋转图.html" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>旋转图</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
+              <a href="http://localhost:4000/demo/落叶/落叶.html" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>叶子</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
+              <a href="http://localhost:4000/demo/轮播图/轮播图.html" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>轮播图</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
+              <a href="http://localhost:4000/demo/瀑布流/定位式瀑布流.html" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>定位式瀑布流</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
+              <a href="http://localhost:4000/demo/瀑布流/浮动式瀑布流.html" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>浮动式瀑布流</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
+              <a href="http://localhost:4000/demo/气泡/气泡.html" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>气泡</a>
             </li>
           
         </ul>
