@@ -1,0 +1,102 @@
+<div class="about_new">
+    <div class="n_new m_mn">
+        <ul class="n_nav">
+            <li ng-click="current=1">签约动态</li>
+            <li ng-click="current=2">公司公告</li>
+            <li ng-click="current=3">行业动态</li>
+            <li ng-click="current=4">门户动态</li>
+        </ul>
+        <div ng-if="current==1">
+           <div class="g_list">
+               <div class="n_box" ng-repeat="item in qydt">
+                   <a href="">
+                       <div class="g_text f_f1">
+                           <div class="tt">{{item.title}}</div>
+                           <div class="info">{{item.info}}</div>
+                       </div>
+                       <div class="time f_f1">
+                           <p class="md">{{item.timeh}}</p>
+                           <p class="y">{{item.timey}}</p>
+                       </div>
+                   </a>
+               </div>
+           </div>
+            <div class="page">
+                <span class="btn btn-primary">1</span>
+                <span class="btn btn-default">2</span>
+                <span class="btn btn-default">3</span>
+                <span class="btn btn-default">下一页</span>
+                <span class="btn btn-default">末页</span>
+            </div>
+        </div>
+        <div ng-if="current==2">
+            <div class="g_list">
+                <div class="n_box" ng-repeat="item in gsgg">
+                    <a href="">
+                        <div class="g_text f_f1">
+                            <div class="tt">{{item.title}}</div>
+                            <div class="info">{{item.info}}</div>
+                        </div>
+                        <div class="time f_f1">
+                            <p class="md">{{item.timeh}}</p>
+                            <p class="y">{{item.timey}}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="page">
+                <span class="btn btn-primary">1</span>
+                <span class="btn btn-default">2</span>
+                <span class="btn btn-default">3</span>
+                <span class="btn btn-default">下一页</span>
+                <span class="btn btn-default">末页</span>
+            </div>
+        </div>
+        <div ng-if="current==3">
+            <div class="g_list">
+                <div class="n_box" ng-repeat="item in hydt">
+                    <a href="">
+                        <div class="g_text f_f1">
+                            <div class="tt">{{item.title}}</div>
+                            <div class="info">{{item.info}}</div>
+                        </div>
+                        <div class="time f_f1">
+                            <p class="md">{{item.timeh}}</p>
+                            <p class="y">{{item.timey}}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="page">
+                <span class="btn btn-primary">1</span>
+                <span class="btn btn-default">2</span>
+                <span class="btn btn-default">3</span>
+                <span class="btn btn-default">下一页</span>
+                <span class="btn btn-default">末页</span>
+            </div>
+        </div>
+        <div ng-if="current==4">
+            <div class="g_list">
+                <div class="n_box" ng-repeat="item in mhdt">
+                    <a href="">
+                        <div class="g_text f_f1">
+                            <div class="tt">{{item.title}}</div>
+                            <div class="info">{{item.info}}</div>
+                        </div>
+                        <div class="time f_f1">
+                            <p class="md">{{item.timeh}}</p>
+                            <p class="y">{{item.timey}}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="page">
+                <span class="btn btn-primary">1</span>
+                <span class="btn btn-default">2</span>
+                <span class="btn btn-default">3</span>
+                <span class="btn btn-default">下一页</span>
+                <span class="btn btn-default">末页</span>
+            </div>
+        </div>
+    </div>
+</div>

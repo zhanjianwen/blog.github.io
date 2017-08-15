@@ -1,0 +1,41 @@
+<div class="message">
+<div class="message_head_bg" >
+    <div class="message_info">
+        <span>资讯</span>
+        <span>INFORMITION</span>
+    </div>
+</div>
+<div class="bar">
+    <ul>
+        <li><a class="click1" ui-sref=".build">网站建设</a></li>
+        <li><a class="click1" ui-sref=".design">网站设计</a>
+        </li>
+        <li><a class="click1" ui-sref=".program">微信小程序</a></li>
+        <li><a class="click1" ui-sref=".phone">手机网站建设</a></li>
+        <li><a class="click1" ui-sref=".experience">建站经验</a></li>
+        <li><a class="click1" ui-sref=".problem">网站建设常见问题</a></li>
+        <li><a class="click1" ui-sref=".WEB">WEB2.0</a></li>
+        <li class="more">
+            <a href="javescript:;" class="message_ico">更多</a>
+            <ul class="more_ul">
+                <li><a href="javescript:;">.Net编程</a></li>
+                <li><a href="javescript:;">酷站推荐</a></li>
+                <li><a href="javescript:;">JQuery</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div ui-view="messageview"></div>
+<script>
+    $('.click1').on('click', function () {
+        $('#ses').css({display: 'none'});
+    })
+</script>
+<script>
+    $(function () {
+        if(document.readyState=="complete"){
+            $('.loading').hide();
+        }
+    });
+</script>
+</div>
