@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动式瀑布流</title>
+    <!--1. 外层容器浮动-->
+    <!--2. 创建需要的元素-->
+    <!--3. 判断某个容器为最小容器-->
+    <!--4. 将内容移入最小容器内-->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        #box {
+            width: 960px;
+            margin: 0 auto;
+        }
+        #box ul {
+            float: left;
+            width: 300px;
+            margin: 0 10px;
+        }
+        #box ul li img {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+    <script>
+        window.onload = function () {
+            //获取元素
+            var oBox = document.getElementById('box');
+            var oUl = oBox.getElementsByTagName("ul");
+            var vH = document.documentElement.clientHeight;
+
+            //滚动加载
+            window.onscroll = function () {
+                var sT = document.documentElement.scrollTop || document.body.scrollTop;
+                //滚动条高度+浏览器高度=内容区域高度
+
+                if (sT + vH > document.body.scrollHeight*0.8) {
+                    createElement();
+                }
+            }
+            //获得最小ul的索引函数
+            function checkHeight(oUl) {
+                //初始化
+                var height = 100000;
+                var index = 0
+                for (var i = 0; i < oUl.length; i++) {
+                    var now_height = oUl[i].offsetHeight;
+                    if (now_height < height) {
+                        height = now_height;
+                        index = i;
+                    }
+                }
+                return index; //返回索引
+            }
+            createElement();
+            function createElement() {
+                for (var i = 1; i <= 18; i++) {
+                    var oImg = document.createElement('img');
+                    oImg.src = './images/' + i + '.png';
+                    var oLi = document.createElement('li');
+                    oLi.appendChild(oImg);
+                    //获得最小ul的索引
+                    var min_index = checkHeight(oUl);
+                    oUl[min_index].appendChild(oLi);
+                }
+
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="box">
+    <ul></ul>
+    <ul></ul>
+    <ul></ul>
+</div>
+</body>
+</html>
