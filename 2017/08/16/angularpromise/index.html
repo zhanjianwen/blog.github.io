@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>vue_cli | Z.J.W</title>
+  <title>angularpromise | Z.J.W</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="node -v node要在4.45 以上 npm install -g vue-cli 全局安装 cli vue init webpack sell(项目名称) name: 默认 ,descrpition(描述): sell app ,Author: 回车 ,ESLint(es语法的风格检查器) : Y, Standard(标准的模板):回车, Karma+Mocha(前端单元测试的库):N,">
-<meta name="keywords" content="vue-cli安装">
+  <meta name="description" content="了解Promise在谈论Promise之前我们要了解一下一些额外的知识；我们知道JavaScript语言的执行环境是“单线程”，所谓单线程，就是一次只能够执行一个任务，如果有多个任务的话就要排队，前面一个任务完成后才可以继续下一个任务。 这种“单线程”的好处就是实现起来比较简单，容易操作；坏处就是容易造成阻塞，因为队列中如果有一个任务耗时比较长，那么后面的任务都无法快速执行，或导致页面卡在某个状态">
+<meta name="keywords" content="angular_promise">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue_cli">
-<meta property="og:url" content="http://yoursite.com/2017/08/15/vue-cli/index.html">
+<meta property="og:title" content="angularpromise">
+<meta property="og:url" content="http://yoursite.com/2017/08/16/angularpromise/index.html">
 <meta property="og:site_name" content="Z.J.W">
-<meta property="og:description" content="node -v node要在4.45 以上 npm install -g vue-cli 全局安装 cli vue init webpack sell(项目名称) name: 默认 ,descrpition(描述): sell app ,Author: 回车 ,ESLint(es语法的风格检查器) : Y, Standard(标准的模板):回车, Karma+Mocha(前端单元测试的库):N,">
-<meta property="og:updated_time" content="2017-08-15T09:37:09.304Z">
+<meta property="og:description" content="了解Promise在谈论Promise之前我们要了解一下一些额外的知识；我们知道JavaScript语言的执行环境是“单线程”，所谓单线程，就是一次只能够执行一个任务，如果有多个任务的话就要排队，前面一个任务完成后才可以继续下一个任务。 这种“单线程”的好处就是实现起来比较简单，容易操作；坏处就是容易造成阻塞，因为队列中如果有一个任务耗时比较长，那么后面的任务都无法快速执行，或导致页面卡在某个状态">
+<meta property="og:updated_time" content="2017-08-16T04:01:43.504Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue_cli">
-<meta name="twitter:description" content="node -v node要在4.45 以上 npm install -g vue-cli 全局安装 cli vue init webpack sell(项目名称) name: 默认 ,descrpition(描述): sell app ,Author: 回车 ,ESLint(es语法的风格检查器) : Y, Standard(标准的模板):回车, Karma+Mocha(前端单元测试的库):N,">
+<meta name="twitter:title" content="angularpromise">
+<meta name="twitter:description" content="了解Promise在谈论Promise之前我们要了解一下一些额外的知识；我们知道JavaScript语言的执行环境是“单线程”，所谓单线程，就是一次只能够执行一个任务，如果有多个任务的话就要排队，前面一个任务完成后才可以继续下一个任务。 这种“单线程”的好处就是实现起来比较简单，容易操作；坏处就是容易造成阻塞，因为队列中如果有一个任务耗时比较长，那么后面的任务都无法快速执行，或导致页面卡在某个状态">
   
     <link rel="alternative" href="/atom.xml" title="Z.J.W" type="application/atom+xml">
   
@@ -148,36 +148,154 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-vue-cli" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-angularpromise" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      vue_cli
+      angularpromise
     </h1>
   
 
         
-        <a href="/2017/08/15/vue-cli/" class="archive-article-date">
-  	<time datetime="2017-08-15T09:35:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-15</time>
+        <a href="/2017/08/16/angularpromise/" class="archive-article-date">
+  	<time datetime="2017-08-16T03:57:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ol>
-<li>node -v node要在4.45 以上</li>
-<li>npm install -g vue-cli 全局安装 cli</li>
-<li>vue init webpack sell(项目名称)</li>
-<li>name: 默认 ,descrpition(描述): sell app ,Author: 回车 ,ESLint(es语法的风格检查器) : Y, Standard(标准的模板):回车, Karma+Mocha(前端单元测试的库):N, e2e test: N</li>
-<li>cd sell</li>
-<li>npm install(安装依赖)</li>
-<li>npm run dev (运行) </li>
-</ol>
+        <p>了解Promise<br>在谈论Promise之前我们要了解一下一些额外的知识；我们知道JavaScript语言的执行环境是“单线程”，所谓单线程，就是一次只能够执行一个任务，如果有多个任务的话就要排队，前面一个任务完成后才可以继续下一个任务。</p>
+<p>这种“单线程”的好处就是实现起来比较简单，容易操作；坏处就是容易造成阻塞，因为队列中如果有一个任务耗时比较长，那么后面的任务都无法快速执行，或导致页面卡在某个状态上，给用户的体验很差。</p>
+<p>当然JavaScript提供了“异步模式”去解决上述的问题，关于“异步模式”JavaScript提供了一些实现的方法。</p>
+<p>回调函数（callbacks）<br>事件监听<br>Promise对象<br><a id="more"></a>关于回调函数，大家应该都不陌生，比如下面的代码（注：引用Leancloud上面的一点代码）：</p>
+<pre><code>AV.User.logIn(&quot;myname&quot;, &quot;mypass&quot;, {
+        success: function(user) {
+        // Do stuff after successful login.
+        },
+        error: function(user, error) {
+        // The login failed. Check error to see why.
+         }
+});
+</code></pre><p>用户通过用户名和密码来进行登录，如果登陆成功的话，会在success这个模块进行处理，如果登陆失败的话，就会在error这个模块进行处理。</p>
+<p>当我们需要处理的任务不是很多的情况下，使用回调函数还是可以应付的，也没有太大的问题，但是当我们需要处理的任务比较多的时候，使用回调函数的弊端越来越明显了；首先，回调使得调用不一致，得不到保证；当依赖于其它回调时，它们篡改代码的流程，是调试变得异常艰难，每一步调用之后都需要显式的处理错误；最后，过多的回调使得代码的可读性和可维护性都变得很差，所以越来越多的程序员选择使用Promise去处理异步模式。</p>
+<p>关于Promise我们会在下面进行详细的说明。</p>
+<p>Promise是什么<br>Promise是一种异步方式处理值（或者非值）的方法，promise是对象，代表了一个函数最终可能的返回值或者抛出的异常。</p>
+<p>在与远程对象打交道时，Promise会非常有用，可以把它们看作远程对象的一个代理。</p>
+<p>点击下面的链接可以查看Promise更多的信息</p>
+<p>Promises/A+<br>Promises/A<br>使用Promise的理由<br>使用Promise可以让我们逃脱回调地狱，使我们的代码看起来像是同步的那样。<br>可以在程序中的任何位置捕捉错误，并且绕过依赖于程序异常的的后续代码，获得功能组合和错误冒泡的能力，最重要的是保持了异步运行的能力。<br>使我们的代码的可读性与可维护性都变得很好。<br>如何在AngularJS中使用Promise<br>要在AngularJS中使用Promise，要使用AngularJS的内置服务$q。<br>1.$q服务受到Kris Kowal的Q库的启发，所以类似于那个库，但是并没有包含那个库的所用功能。<br>2.$q是跟AngularJS的$rootScope模板集成的，所以在AngularJS中执行和拒绝都很快。<br>3.$q promise是跟AngularJS模板引擎集成的，这意味着在视图中找到任何Promise都会在视图中被执行或者拒绝。<br>我们可以先使用$q的defer()方法创建一个deferred对象，然后通过deferred对象的promise属性，将这个对象变成一个promise对象；这个deferred对象还提供了三个方法，分别是resolve(),reject(),notify()。</p>
+<p>下面我们来通过代码逐步地将上面的功能都实现，毕竟说得再多，不如你实实在在地把它们敲成代码去实现。</p>
+<p>Test1<br>我们先通过一个同步的例子来创建一个promise对象。<br>HTML代码：</p>
+<p><div ng-app="MyApp"><br>    <div ng-controller="MyController"><br>        <label for="flag">成功<br>        <input id="flag" type="checkbox" ng-model="flag"><br><br>        </label><br>        <hr><br>        <button ng-click="handle()">点击我</button><br>    </div><br></div><br>JS代码：<br>angular.module(“MyApp”, [])<br>.controller(“MyController”, [“$scope”, “$q”, function ($scope, $q) {<br>            $scope.flag = true;<br>            $scope.handle = function () {<br>            var deferred = $q.defer();<br>            var promise = deferred.promise;</p>
+<pre><code>    promise.then(function (result) {
+        alert(&quot;Success: &quot; + result);
+    }, function (error) {
+        alert(&quot;Fail: &quot; + error);
+    });
 
+    if ($scope.flag) {
+        deferred.resolve(&quot;you are lucky!&quot;);
+    } else {
+        deferred.reject(&quot;sorry, it lost!&quot;);
+    }
+}
+</code></pre><p>}]);</p>
+<p>我们来详细的分析一下上面的代码，我们在html页面上添加了一个checkbox，一个button目的是为了当我们选中checkbox和不选中checkbox时，点击下面的按钮会弹出不同的内容。</p>
+<p>var deferred = $q.defer()这段代码创建了一个deferred对象，我们然后利用var promise = deferred.promise创建了一个promise对象。</p>
+<p>我们给给promise的then方法传递了两个处理函数，分别处理当promise被执行的时候以及promise被拒绝的时候所要进行的操作。</p>
+<p>下面的一个if(){}else{}语句块，包含执行和拒绝deferred promise,如果$scope.flag为true,那么我们就会执行deferred promise，然后我们给promise传递一个值，也可能是一个对象，表明promise执行的结果。如果$scope.flag为false,那么我们就会拒绝deferred promise，然后我们给promise传递一个值，也可能是一个对象，表明promise被拒绝的原因。</p>
+<p>现在回过头来看看，promise的then方法，如果promise被执行，那么它的参数中的第一个函数的result就代表了”you are lucky!”</p>
+<p>我们暂时用的是同步的模式，为的是能够说明问题，后面将会使用异步的方法。</p>
+<p>到这里我们可以了解一下$q的defer()方法创建的对象具有哪些方法</p>
+<p>resolve(value)：用来执行deferred promise，value可以为字符串，对象等。<br>reject(value)：用来拒绝deferred promise，value可以为字符串，对象等。<br>notify(value)：获取deferred promise的执行状态，然后使用这个函数来传递它。<br>then(successFunc, errorFunc, notifyFunc)：无论promise是成功了还是失败了，当结果可用之后，then都会立刻异步调用successFunc，或者’errorFunc’，在promise被执行或者拒绝之前，notifyFunc可能会被调用0到多次，以提供过程状态的提示。<br>catch(errorFunc)<br>finally(callback)<br>Online Code Part1点击预览</p>
+<p>通过使用then进行链式请求<br>我们通过使用then方法来进行链式调用，这样做的好处是，无论前一个任务或者说then函数是被执行或者拒绝了都不会影响后面的then函数的运行。</p>
+<p>我们可以通过then创建一个执行链，它允许我们中断基于更多功能的应用流程，可以借此导向不同的的结果，这个中断可以让我们在执行链的任意时刻暂停后者推迟promise的执行。</p>
+<p>Test2<br>HTML代码</p>
+<p><div ng-app="MyApp"><br>    <div ng-controller="MyController"><br>        <label for="flag">成功<br>        <input id="flag" type="checkbox" ng-model="flag"><br><br>        </label><br>        <div ng-cloak=""><br>            <br>        </div><br>        <hr><br>        <button ng-click="handle()">点击我</button><br>    </div><br></div><br>JS代码：</p>
+<pre><code>angular.module(&quot;MyApp&quot;, [])
+.controller(&quot;MyController&quot;, [&quot;$scope&quot;, &quot;$q&quot;, function ($scope, $q) {
+    $scope.flag = true;
+    $scope.handle = function () {
+    var deferred = $q.defer();
+    var promise = deferred.promise;
+
+    promise.then(function (result) {
+        result = result + &quot;you have passed the first then()&quot;;
+        $scope.status = result;
+        return result;
+    }, function (error) {
+        error = error + &quot;failed but you have passed the first then()&quot;;
+        $scope.status = error;
+        return error;
+    }).then(function (result) {
+        alert(&quot;Success: &quot; + result);
+    }, function (error) {
+        alert(&quot;Fail: &quot; + error);
+    })
+
+    if ($scope.flag) {
+        deferred.resolve(&quot;you are lucky!&quot;);
+    } else {
+        deferred.reject(&quot;sorry, it lost!&quot;);
+    }
+}
+</code></pre><p>}]);<br>Online Code Part2点击预览</p>
+<p>我们在Part1代码的基础上添加了一些代码，在原来的promise的链条上新添加了一个then()处理函数，目的就是为了创建一个执行连，看看在这条执行连上，promise是如何被执行的。</p>
+<p>需要注意的一点是，在第一个then()方法中，我们在第一个successFunc函数中将result的值进行了改变，在第二个errorFunc函数中对error的值也进行了改变。</p>
+<p>因为这个promise对象是贯穿整个执行链条的，所以在第一个then()方法中对其值进行改变必然会反映到后面的then()方法中</p>
+<p>一个异步模式的实例<br>Test3<br>第三个例子，我们创建了一个服务，然后在这个服务中创建了一个promise,服务的目的就是为了拉取github上面关于angularjs一些pull的数据，详细的代码可以看下面</p>
+<p>下面的例子包含的部分有点多,因为我是在以前的例子上做的改动，大家可以只看promise这部分。</p>
+<p>目录结构：</p>
+<p>MyApp</p>
+<p>js</p>
+<p>app.js<br>controller.js<br>service.js<br>views</p>
+<p>home.html<br>index.html<br>js/app.js</p>
+<p>angular.module(“MyApp”, [“ngRoute”,”MyController”, “MyService”])<br>.config([“$routeProvider”, function($routeProvider){<br>    $routeProvider<br>    .when(‘/‘,{<br>        templateUrl: “views/home.html”,<br>        controller: “IndexController”<br>    });<br>}]);<br>js/controller.js</p>
+<p>angular.module(“MyController”, [])<br>    .controller(“IndexController”, [“$scope”, “githubService”,                                function($scope, githubService){<br>        $scope.name = “dreamapple”;<br>        $scope.show = true;<br>        githubService.getPullRequests().then(function(result){<br>            $scope.data = result;<br>        },function(error){<br>            $scope.data = “error!”;<br>        },function(progress){<br>            $scope.progress = progress;<br>            $scope.show = false;<br>        });<br>    }]);<br>js/service.js</p>
+<pre><code>angular.module(&quot;MyService&quot;, [])
+.factory(&apos;githubService&apos;, [&quot;$q&quot;, &quot;$http&quot;, function($q, $http){
+    var getPullRequests = function(){
+    var deferred = $q.defer();
+    var promise = deferred.promise;
+    var progress;
+    $http.get(&quot;https://api.github.com/repos/angular/angular.js/pulls&quot;)
+    .success(function(data){
+        var result = [];
+        for(var i = 0; i &lt; data.length; i++){
+            result.push(data[i].user);
+            progress = (i+1)/data.length * 100;
+            deferred.notify(progress);
+        }
+        deferred.resolve(result);
+        })
+    .error(function(error){
+        deferred.reject(error);
+    });
+    return promise;
+}
+
+return {
+    getPullRequests: getPullRequests
+};
+</code></pre><p>}]);<br>views/home.html</p>
+<p></p><h1></h1><p></p>
+<p></p><h2>Progress: </h2><p></p>
+<p></p><h3 ng-show="show">Please wait a moment…</h3><p></p>
+<p></p><p ng-repeat="person in data"></p><br>index.html<p></p>
+<!-- 不把下面的注释掉会出现问题，我是指上传到segmentfault上 -->
+<!-- <head>
+    <meta charset="UTF-8">
+    <title>Route</title>
+    <script src="http://cdn.bootcss.com/angular.js/1.4.0-rc.1/angular.js"></script>
+    <script src="../node_modules/angular-route/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/service.js"></script>
+</head> -->
+<body ng-app="MyApp"><br>    <header><br>        <h1>Header</h1><br>        <hr><br>    </header><br>    <div ng-view=""><br>    </div><br>    <footer><br>        <hr><br>        <h1>Footer</h1><br>    </footer><br></body>
       
 
       
@@ -211,7 +329,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">vue-cli安装</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">angular_promise</a>
         		</li>
       		
 		</ul>
@@ -267,7 +385,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/08/15/vue-cli/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/08/16/angularpromise/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -281,18 +399,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/08/16/git上传/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          git上传
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/08/14/随笔/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">随笔</div>
+    <a href="/2017/08/16/前端入门/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">前端入门</div>
       <i class="icon-circle-right"></i>
     </a>
   
