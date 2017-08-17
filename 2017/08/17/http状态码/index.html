@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/08/17/http状态码/index.html">
 <meta property="og:site_name" content="Z.J.W">
 <meta property="og:description" content="HTTP状态码大全完整的 HTTP 1.1规范说明书来自于RFC 2616，你可以在http://www.talentdigger.cn/home/link.php?url=d3d3LnJmYy1lZGl0b3Iub3JnLw%3D%3D在线查阅。HTTP 1.1的状态码被标记为新特性，因为许多浏览器只支持 HTTP 1.0。你应只把状态码发送给支持 HTTP 1.1的客户端，支持协议版本可以通过">
-<meta property="og:updated_time" content="2017-08-17T01:55:02.832Z">
+<meta property="og:updated_time" content="2017-08-17T01:59:22.418Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="http状态码">
 <meta name="twitter:description" content="HTTP状态码大全完整的 HTTP 1.1规范说明书来自于RFC 2616，你可以在http://www.talentdigger.cn/home/link.php?url=d3d3LnJmYy1lZGl0b3Iub3JnLw%3D%3D在线查阅。HTTP 1.1的状态码被标记为新特性，因为许多浏览器只支持 HTTP 1.0。你应只把状态码发送给支持 HTTP 1.1的客户端，支持协议版本可以通过">
@@ -171,7 +171,7 @@
         <p>HTTP状态码大全<br>完整的 HTTP 1.1规范说明书来自于RFC 2616，你可以在<a href="http://www.talentdigger.cn/home/link.php?url=d3d3LnJmYy1lZGl0b3Iub3JnLw%3D%3D在线查阅。HTTP" target="_blank" rel="external">http://www.talentdigger.cn/home/link.php?url=d3d3LnJmYy1lZGl0b3Iub3JnLw%3D%3D在线查阅。HTTP</a> 1.1的状态码被标记为新特性，因为许多浏览器只支持 HTTP 1.0。你应只把状态码发送给支持 HTTP 1.1的客户端，支持协议版本可以通过调用request.getRequestProtocol来检查。 </p>
 <p>本部分余下的内容会详细地介绍 HTTP 1.1中的状态码。这些状态码被分为五大类： </p>
 <p>100-199 用于指定客户端应相应的某些动作。<br>200-299 用于表示请求成功。<br>300-399 用于已经移动的文件并且常被包含在定位头信息中指定新的地址信息。<br>400-499 用于指出客户端的错误。<br>500-599 用于支持服务器错误。 </p>
-<p>HttpServletResponse中的常量代表关联不同标准消息的状态码。在servlet程序中，你会更多地用到这些常量的标识来使用状态码。例如：你一般会使用response.setStatus(response.SC_NO_CONTENT)而不是 response.setStatus(204)，因为后者不易理解而且容易导致错误。但是，你应当注意到服务器允许对消息轻微的改变，而客户端只注意状态码的数字值。所以服务器可能只返回 HTTP/1.1 200 而不是 HTTP/1.1 200 OK。 </p>
+<p><a id="more"></a>HttpServletResponse中的常量代表关联不同标准消息的状态码。在servlet程序中，你会更多地用到这些常量的标识来使用状态码。例如：你一般会使用response.setStatus(response.SC_NO_CONTENT)而不是 response.setStatus(204)，因为后者不易理解而且容易导致错误。但是，你应当注意到服务器允许对消息轻微的改变，而客户端只注意状态码的数字值。所以服务器可能只返回 HTTP/1.1 200 而不是 HTTP/1.1 200 OK。 </p>
 <p>100 (Continue/继续)<br>如果服务器收到头信息中带有100-continue的请求，这是指客户端询问是否可以在后续的请求中发送附件。在这种情况下，服务器用100(SC_CONTINUE)允许客户端继续或用417 (Expectation Failed)告诉客户端不同意接受附件。这个状态码是 HTTP 1.1中新加入的。 </p>
 <p>101 (Switching Protocols/转换协议)<br>101 (SC_SWITCHING_PROTOCOLS)状态码是指服务器将按照其上的头信息变为一个不同的协议。这是 HTTP 1.1中新加入的。 </p>
 <p>200 (OK/正常)<br>200 (SC_OK)的意思是一切正常。一般用于相应GET和POST请求。这个状态码对servlet是缺省的；如果没有调用setStatus方法的话，就会得到200。 </p>
