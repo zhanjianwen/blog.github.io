@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/08/16/angularpromise/index.html">
 <meta property="og:site_name" content="Z.J.W">
 <meta property="og:description" content="了解Promise在谈论Promise之前我们要了解一下一些额外的知识；我们知道JavaScript语言的执行环境是“单线程”，所谓单线程，就是一次只能够执行一个任务，如果有多个任务的话就要排队，前面一个任务完成后才可以继续下一个任务。 这种“单线程”的好处就是实现起来比较简单，容易操作；坏处就是容易造成阻塞，因为队列中如果有一个任务耗时比较长，那么后面的任务都无法快速执行，或导致页面卡在某个状态">
-<meta property="og:updated_time" content="2017-08-17T01:53:00.670Z">
+<meta property="og:updated_time" content="2017-08-17T11:17:01.749Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="angular_promise">
 <meta name="twitter:description" content="了解Promise在谈论Promise之前我们要了解一下一些额外的知识；我们知道JavaScript语言的执行环境是“单线程”，所谓单线程，就是一次只能够执行一个任务，如果有多个任务的话就要排队，前面一个任务完成后才可以继续下一个任务。 这种“单线程”的好处就是实现起来比较简单，容易操作；坏处就是容易造成阻塞，因为队列中如果有一个任务耗时比较长，那么后面的任务都无法快速执行，或导致页面卡在某个状态">
@@ -171,7 +171,7 @@
         <p>了解Promise<br>在谈论Promise之前我们要了解一下一些额外的知识；我们知道JavaScript语言的执行环境是“单线程”，所谓单线程，就是一次只能够执行一个任务，如果有多个任务的话就要排队，前面一个任务完成后才可以继续下一个任务。</p>
 <p>这种“单线程”的好处就是实现起来比较简单，容易操作；坏处就是容易造成阻塞，因为队列中如果有一个任务耗时比较长，那么后面的任务都无法快速执行，或导致页面卡在某个状态上，给用户的体验很差。</p>
 <p>当然JavaScript提供了“异步模式”去解决上述的问题，关于“异步模式”JavaScript提供了一些实现的方法。</p>
-<p>回调函数（callbacks）<br>事件监听<br>Promise对象<br><!--morehuan-->关于回调函数，大家应该都不陌生，比如下面的代码（注：引用Leancloud上面的一点代码）：</p>
+<p>回调函数（callbacks）<br>事件监听<br>Promise对象<br><a id="more"></a>关于回调函数，大家应该都不陌生，比如下面的代码（注：引用Leancloud上面的一点代码）：</p>
 <pre><code>AV.User.logIn(&quot;myname&quot;, &quot;mypass&quot;, {
         success: function(user) {
         // Do stuff after successful login.
