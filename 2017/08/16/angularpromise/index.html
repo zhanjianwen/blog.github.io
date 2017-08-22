@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/08/16/angularpromise/index.html">
 <meta property="og:site_name" content="Z.J.W">
 <meta property="og:description" content="了解Promise在谈论Promise之前我们要了解一下一些额外的知识；我们知道JavaScript语言的执行环境是“单线程”，所谓单线程，就是一次只能够执行一个任务，如果有多个任务的话就要排队，前面一个任务完成后才可以继续下一个任务。 这种“单线程”的好处就是实现起来比较简单，容易操作；坏处就是容易造成阻塞，因为队列中如果有一个任务耗时比较长，那么后面的任务都无法快速执行，或导致页面卡在某个状态">
-<meta property="og:updated_time" content="2017-08-17T11:18:37.564Z">
+<meta property="og:updated_time" content="2017-08-22T07:07:50.482Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="angular_promise">
 <meta name="twitter:description" content="了解Promise在谈论Promise之前我们要了解一下一些额外的知识；我们知道JavaScript语言的执行环境是“单线程”，所谓单线程，就是一次只能够执行一个任务，如果有多个任务的话就要排队，前面一个任务完成后才可以继续下一个任务。 这种“单线程”的好处就是实现起来比较简单，容易操作；坏处就是容易造成阻塞，因为队列中如果有一个任务耗时比较长，那么后面的任务都无法快速执行，或导致页面卡在某个状态">
@@ -180,16 +180,9 @@
         // The login failed. Check error to see why.
          }
 });
-</code></pre><p>用户通过用户名和密码来进行登录，如果登陆成功的话，会在success这个模块进行处理，如果登陆失败的话，就会在error这个模块进行处理。</p>
-<p>当我们需要处理的任务不是很多的情况下，使用回调函数还是可以应付的，也没有太大的问题，但是当我们需要处理的任务比较多的时候，使用回调函数的弊端越来越明显了；首先，回调使得调用不一致，得不到保证；当依赖于其它回调时，它们篡改代码的流程，是调试变得异常艰难，每一步调用之后都需要显式的处理错误；最后，过多的回调使得代码的可读性和可维护性都变得很差，所以越来越多的程序员选择使用Promise去处理异步模式。</p>
-<p>关于Promise我们会在下面进行详细的说明。</p>
-<p>Promise是什么<br>Promise是一种异步方式处理值（或者非值）的方法，promise是对象，代表了一个函数最终可能的返回值或者抛出的异常。</p>
-<p>在与远程对象打交道时，Promise会非常有用，可以把它们看作远程对象的一个代理。</p>
-<p>点击下面的链接可以查看Promise更多的信息</p>
-<p>Promises/A+<br>Promises/A<br>使用Promise的理由<br>使用Promise可以让我们逃脱回调地狱，使我们的代码看起来像是同步的那样。<br>可以在程序中的任何位置捕捉错误，并且绕过依赖于程序异常的的后续代码，获得功能组合和错误冒泡的能力，最重要的是保持了异步运行的能力。<br>使我们的代码的可读性与可维护性都变得很好。<br>如何在AngularJS中使用Promise<br>要在AngularJS中使用Promise，要使用AngularJS的内置服务$q。<br>1.$q服务受到Kris Kowal的Q库的启发，所以类似于那个库，但是并没有包含那个库的所用功能。<br>2.$q是跟AngularJS的$rootScope模板集成的，所以在AngularJS中执行和拒绝都很快。<br>3.$q promise是跟AngularJS模板引擎集成的，这意味着在视图中找到任何Promise都会在视图中被执行或者拒绝。<br>我们可以先使用$q的defer()方法创建一个deferred对象，然后通过deferred对象的promise属性，将这个对象变成一个promise对象；这个deferred对象还提供了三个方法，分别是resolve(),reject(),notify()。</p>
-<p>下面我们来通过代码逐步地将上面的功能都实现，毕竟说得再多，不如你实实在在地把它们敲成代码去实现。</p>
-<p>Test1<br>我们先通过一个同步的例子来创建一个promise对象。<br>HTML代码：</p>
-<p><div ng-app="MyApp"><br>    <div ng-controller="MyController"><br>        <label for="flag">成功<br>        <input id="flag" type="checkbox" ng-model="flag"><br><br>        </label><br>        <hr><br>        <button ng-click="handle()">点击我</button><br>    </div><br></div><br>JS代码：<br>angular.module(“MyApp”, [])<br>.controller(“MyController”, [“$scope”, “$q”, function ($scope, $q) {<br>            $scope.flag = true;<br>            $scope.handle = function () {<br>            var deferred = $q.defer();<br>            var promise = deferred.promise;</p>
+</code></pre><p>用户通过用户名和密码来进行登录，如果登陆成功的话，会在success这个模块进行处理，如果登陆失败的话，就会在error这个模块进行处理。<br>当我们需要处理的任务不是很多的情况下，使用回调函数还是可以应付的，也没有太大的问题，但是当我们需要处理的任务比较多的时候，使用回调函数的弊端越来越明显了；首先，回调使得调用不一致，得不到保证；当依赖于其它回调时，它们篡改代码的流程，是调试变得异常艰难，每一步调用之后都需要显式的处理错误；最后，过多的回调使得代码的可读性和可维护性都变得很差，所以越来越多的程序员选择使用Promise去处理异步模式。<br>关于Promise我们会在下面进行详细的说明。</p>
+<h3 id="Promise是什么"><a href="#Promise是什么" class="headerlink" title="Promise是什么"></a>Promise是什么</h3><p>Promise是一种异步方式处理值（或者非值）的方法，promise是对象，代表了一个函数最终可能的返回值或者抛出的异常。<br>在与远程对象打交道时，Promise会非常有用，可以把它们看作远程对象的一个代理。<br>点击下面的链接可以查看Promise更多的信息<br>Promises/A+<br>Promises/A</p>
+<h3 id="使用Promise的理由"><a href="#使用Promise的理由" class="headerlink" title="使用Promise的理由"></a>使用Promise的理由</h3><p>使用Promise可以让我们逃脱回调地狱，使我们的代码看起来像是同步的那样。<br>可以在程序中的任何位置捕捉错误，并且绕过依赖于程序异常的的后续代码，获得功能组合和错误冒泡的能力，最重要的是保持了异步运行的能力。<br>使我们的代码的可读性与可维护性都变得很好。<br>如何在AngularJS中使用Promise<br>要在AngularJS中使用Promise，要使用AngularJS的内置服务$q。<br>1.$q服务受到Kris Kowal的Q库的启发，所以类似于那个库，但是并没有包含那个库的所用功能。<br>2.$q是跟AngularJS的$rootScope模板集成的，所以在AngularJS中执行和拒绝都很快。<br>3.$q promise是跟AngularJS模板引擎集成的，这意味着在视图中找到任何Promise都会在视图中被执行或者拒绝。<br>我们可以先使用$q的defer()方法创建一个deferred对象，然后通过deferred对象的promise属性，将这个对象变成一个promise对象；这个deferred对象还提供了三个方法，分别是resolve(),reject(),notify()。<br>下面我们来通过代码逐步地将上面的功能都实现，毕竟说得再多，不如你实实在在地把它们敲成代码去实现。<br>JS代码：<br>angular.module(“MyApp”, [])<br>.controller(“MyController”, [“$scope”, “$q”, function ($scope, $q) {<br>            $scope.flag = true;<br>            $scope.handle = function () {<br>            var deferred = $q.defer();<br>            var promise = deferred.promise;</p>
 <pre><code>    promise.then(function (result) {
         alert(&quot;Success: &quot; + result);
     }, function (error) {
