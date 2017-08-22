@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Z.J.W</title>
+  <title>跨域 | Z.J.W</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Z.J.W">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="如何解决ajax跨域问题（转）由 于此前很少写前端的代码(哈哈，不合格的程序员啊)，最近项目中用到json作为系统间交互的手段，自然就伴随着众多ajax请求，随之而来的就是要解决 ajax的跨域问题。本篇将讲述一个小白从遇到跨域不知道是跨域问题，到知道是跨域问题不知道如何解决，再到解决跨域问题，最后找到两种方法解决ajax 跨域问题的全过程。 不知是跨域问题起 因是这样的，为了复用，减少重复开发，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="跨域">
+<meta property="og:url" content="http://yoursite.com/2017/08/21/跨域/index.html">
 <meta property="og:site_name" content="Z.J.W">
+<meta property="og:description" content="如何解决ajax跨域问题（转）由 于此前很少写前端的代码(哈哈，不合格的程序员啊)，最近项目中用到json作为系统间交互的手段，自然就伴随着众多ajax请求，随之而来的就是要解决 ajax的跨域问题。本篇将讲述一个小白从遇到跨域不知道是跨域问题，到知道是跨域问题不知道如何解决，再到解决跨域问题，最后找到两种方法解决ajax 跨域问题的全过程。 不知是跨域问题起 因是这样的，为了复用，减少重复开发，">
+<meta property="og:updated_time" content="2017-08-21T08:51:11.010Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Z.J.W">
+<meta name="twitter:title" content="跨域">
+<meta name="twitter:description" content="如何解决ajax跨域问题（转）由 于此前很少写前端的代码(哈哈，不合格的程序员啊)，最近项目中用到json作为系统间交互的手段，自然就伴随着众多ajax请求，随之而来的就是要解决 ajax的跨域问题。本篇将讲述一个小白从遇到跨域不知道是跨域问题，到知道是跨域问题不知道如何解决，再到解决跨域问题，最后找到两种方法解决ajax 跨域问题的全过程。 不知是跨域问题起 因是这样的，为了复用，减少重复开发，">
   
     <link rel="alternative" href="/atom.xml" title="Z.J.W" type="application/atom+xml">
   
@@ -143,16 +147,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-跨域" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-跨域" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/21/跨域/">跨域</a>
+    <h1 class="article-title" itemprop="name">
+      跨域
     </h1>
   
 
@@ -180,6 +182,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -187,16 +210,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/21/跨域/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/08/21/跨域/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/08/17/http状态码/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">http状态码</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -216,690 +298,12 @@
 
 
 
-
   
-    <article id="post-http状态码" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/17/http状态码/">http状态码</a>
-    </h1>
   
 
-        
-        <a href="/2017/08/17/http状态码/" class="archive-article-date">
-  	<time datetime="2017-08-17T01:54:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>HTTP状态码大全<br>完整的 HTTP 1.1规范说明书来自于RFC 2616，你可以在<a href="http://www.talentdigger.cn/home/link.php?url=d3d3LnJmYy1lZGl0b3Iub3JnLw%3D%3D在线查阅。HTTP" target="_blank" rel="external">http://www.talentdigger.cn/home/link.php?url=d3d3LnJmYy1lZGl0b3Iub3JnLw%3D%3D在线查阅。HTTP</a> 1.1的状态码被标记为新特性，因为许多浏览器只支持 HTTP 1.0。你应只把状态码发送给支持 HTTP 1.1的客户端，支持协议版本可以通过调用request.getRequestProtocol来检查。 </p>
-<p>本部分余下的内容会详细地介绍 HTTP 1.1中的状态码。这些状态码被分为五大类： </p>
-<p>100-199 用于指定客户端应相应的某些动作。<br>200-299 用于表示请求成功。<br>300-399 用于已经移动的文件并且常被包含在定位头信息中指定新的地址信息。<br>400-499 用于指出客户端的错误。<br>500-599 用于支持服务器错误。 </p>
-<p>
-        
-          <a class="article-more-a" href="/2017/08/17/http状态码/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">http状态码</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/17/http状态码/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-angularpromise" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/16/angularpromise/">angular_promise</a>
-    </h1>
   
 
-        
-        <a href="/2017/08/16/angularpromise/" class="archive-article-date">
-  	<time datetime="2017-08-16T03:57:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>了解Promise<br>在谈论Promise之前我们要了解一下一些额外的知识；我们知道JavaScript语言的执行环境是“单线程”，所谓单线程，就是一次只能够执行一个任务，如果有多个任务的话就要排队，前面一个任务完成后才可以继续下一个任务。</p>
-<p>这种“单线程”的好处就是实现起来比较简单，容易操作；坏处就是容易造成阻塞，因为队列中如果有一个任务耗时比较长，那么后面的任务都无法快速执行，或导致页面卡在某个状态上，给用户的体验很差。</p>
-<p>当然JavaScript提供了“异步模式”去解决上述的问题，关于“异步模式”JavaScript提供了一些实现的方法。</p>
-<p>回调函数（callbacks）<br>事件监听<br>Promise对象<br>
-        
-          <a class="article-more-a" href="/2017/08/16/angularpromise/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">angular_promise</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/16/angularpromise/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-前端入门" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/16/前端入门/">前端入门</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/16/前端入门/" class="archive-article-date">
-  	<time datetime="2017-08-16T03:28:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="一-名词解释"><a href="#一-名词解释" class="headerlink" title="一.名词解释"></a>一.名词解释</h2><h3 id="横切"><a href="#横切" class="headerlink" title="横切"></a>横切</h3><p>在固定页面的宽度(按栅格化进行)并且对高度没有限制的容器称为一个标准横切</p>
-<h3 id="留白"><a href="#留白" class="headerlink" title="留白"></a>留白</h3><h4 id="两个容器或碎片之间的上、下、左、右的空白距离"><a href="#两个容器或碎片之间的上、下、左、右的空白距离" class="headerlink" title="两个容器或碎片之间的上、下、左、右的空白距离"></a>两个容器或碎片之间的上、下、左、右的空白距离</h4><h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><p>元素可以从其父级元素中获得一些可为自己使用的属性或值。</p>
-<h3 id="图片定位"><a href="#图片定位" class="headerlink" title="图片定位"></a>图片定位</h3><p>把图片元素放置到一个静态的、相对的、绝对的、或固定的位置中，利用CSS中对图片进行遮罩属性，多用于页面中的修饰图</p>
-<h3 id="底图"><a href="#底图" class="headerlink" title="底图"></a>底图</h3><p>页面中在标签中使用的背景图</p>
-<h3 id="齐底-图-线"><a href="#齐底-图-线" class="headerlink" title="齐底(图)线"></a>齐底(图)线</h3><p>用于区分横切或碎片结束的线或图</p>
-<p>
-        
-          <a class="article-more-a" href="/2017/08/16/前端入门/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">前端入门</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/16/前端入门/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-git上传" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/16/git上传/">git上传</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/16/git上传/" class="archive-article-date">
-  	<time datetime="2017-08-16T02:19:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>软件仓库，版本控制</p>
-<ol>
-<li>注册账号</li>
-<li>创建项目</li>
-<li>克隆到本地仓库<br> git clone git@git.oschina.net:LeslieZhang/git_project.git</li>
-<li>上传代码到远程仓库<br> cd git_project<br> git add .<br> git status<br> git commit -m “注释内容”<br> git push</li>
-<li>手动更新仓库的内容到本地再次推送新代码到仓库<br> git pull<br> git push<br>配置［ps.通过git config –list可验证］<br>  git config –global user.name “leslie”     ＃ 引号内容： 自己用户名<br>  git config –global user.email “lesliezjm@foxmail.com”    ＃ 引号内容： 自己邮箱<br>＃生成公钥（一直回车直到退出）<br> ssh-keygen -t rsa -C “lesliezjm@foxmail.com”  <h3 id="验证公钥设置是否正确"><a href="#验证公钥设置是否正确" class="headerlink" title="验证公钥设置是否正确"></a>验证公钥设置是否正确</h3> ssh -T git@git.oschina.net<br>若返回<br> Welcome to Git@OSC, yourname!<br>则证明添加成功。</li>
-</ol>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">git上传</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/16/git上传/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-vue-cli" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/15/vue-cli/">vue_cli</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/15/vue-cli/" class="archive-article-date">
-  	<time datetime="2017-08-15T09:35:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li>node -v node要在4.45 以上</li>
-<li>npm install -g vue-cli 全局安装 cli</li>
-<li>vue init webpack sell(项目名称)</li>
-<li>name: 默认 ,descrpition(描述): sell app ,Author: 回车 ,ESLint(es语法的风格检查器) : Y, Standard(标准的模板):回车, Karma+Mocha(前端单元测试的库):N, e2e test: N</li>
-<li>cd sell</li>
-<li>npm install(安装依赖)</li>
-<li>npm run dev (运行) </li>
-</ol>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">vue-cli安装</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/15/vue-cli/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-随笔" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/14/随笔/">随笔</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/14/随笔/" class="archive-article-date">
-  	<time datetime="2017-08-14T04:36:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>我的随笔</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/14/随笔/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-photo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/14/photo/">photo</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/14/photo/" class="archive-article-date">
-  	<time datetime="2017-08-14T04:21:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>我的相册</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">photo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/14/photo/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-html" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/14/html/">Flex 布局</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/14/html/" class="archive-article-date">
-  	<time datetime="2017-08-14T03:03:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p></p><h5>Flex 是 Flexible Box 的缩写，意为”弹性布局”，用来为盒状模型提供最大的灵活性。<br>任何一个容器都可以指定为 Flex 布局。</h5><p></p>
-<p></p><h6><div style="background:#cecece;text-align:center">.box{display: flex;}<br></div></h6><p></p>
-<p></p><h5>行内元素也可以使用 Flex 布局。</h5><p></p>
-<p></p><h6><div style="background:#cecece;text-align:center">.box{display: inline-flex;}<br></div></h6><br>Webkit 内核的浏览器，必须加上-webkit前缀。<p></p>
-<p></p><h6><div style="background:#cecece;text-align:center">.box{display: -webkit-flex; /<em> Safari </em>/;display: flex;}<br></div></h6><br>注意，设为 Flex 布局以后，子元素的float、clear和vertical-align属性将失效
-        
-          <a class="article-more-a" href="/2017/08/14/html/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/14/html/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/13/hello-world/">web前端的一些故事</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/13/hello-world/" class="archive-article-date">
-  	<time datetime="2017-08-13T08:04:55.044Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>随着Web 2.0概念的普及和W3C组织的推广，网站重构的影响力正以惊人的速度增长。XHTML+CSS布局、DHTML和Ajax像一阵旋风，铺天盖地席卷而来，包括新浪、搜狐、网易、腾讯、淘宝等在内的各种规模的IT企业都对自己的网站进行了重构。前端开发的入门门槛其实非常低，与服务器端语言先慢后快的学习曲线相比，前端开发的学习曲线是先快后慢。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/13/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -922,8 +326,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
